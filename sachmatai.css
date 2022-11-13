@@ -1,0 +1,36 @@
+table, tr, td{
+    border: solid grey
+}
+
+td{
+    height: 50px;
+    width: 50px;
+}
+
+table tr:nth-child(even) td:nth-child(even){
+    background-color: black;
+}
+
+table tr:nth-child(odd) td:nth-child(odd){
+    background-color: black;
+}
+
+h1::before{
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    content: "♛♛";
+    
+}
+h1::after{
+    content: "♛♛";
+}
+
+nav a:not(:first-child)::before {
+    content: "//";
+}
+nav a:not(:last-child)::after {
+    content: "//";
+}
